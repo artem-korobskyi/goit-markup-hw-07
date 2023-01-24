@@ -14,20 +14,30 @@
 	<body>
 		<!-- Шапка страницы -->
 		<header class="page-header">
-			<div class="container main-nav">
-				<a class="logo" href="./index.html">
-					<span class="logo-blue">web</span>studio
-				</a>
-				<!-- Навигация на другие страницы -->
+			<div class="container header-container">				
 				<nav class="navigation">
-				<ul class="site-nav list">
-					<li class="item"><a href="./index.html" class="item-index link-current">Studio</a></li>
-					<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-					<li class="item"><a href="" class="link">Contacts</a></li>
-				</ul>
-			</nav>
-			<!-- Контакты -->
-			<ul class="auth-nav list">
+					<a class="logo" href="./index.html">
+						<span class="logo-blue">web</span>studio
+					</a>
+							<ul class="site-nav list">
+						<li class="item"><a href="./index.html" class="item-index link-current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+						<li class="item"><a href="" class="link">Contacts</a></li>
+							</ul>
+				</nav>
+				<button type="button" 
+				class="menu-toggle js-open-menu" 
+				aria-expanded="false"
+        		aria-controls="mobile-menu">
+				<svg class="menu-hamburger" width="32" height="22">
+            <use href="./image/icons.svg#menu-hamburger"></use></svg>
+        </button>
+		<ul class="menu">
+						<li class="item"><a href="./index.html" class="item-index link-current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+						<li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+			<ul class="menu">
 				<li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li=i>
 				<li class="item"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li=i>
 			</ul>
@@ -36,7 +46,7 @@
 		<!-- Основная информация -->
 		<main>
 			<!-- Hero -->
-			<section class="hero">
+			<section class="hero overlay">
 				<div class="container">
 				<h1 class="hero-title">Effective Solutions for Your Business</h1>
 				<button class="button" type="button" data-modal-open>Order Service</button>
@@ -85,7 +95,8 @@
                         <textarea name="user_message" class="modal-form-mesage" placeholder="Text input"></textarea>
                     </label>
                     <input id="user_polic" type="checkbox" name="user_polic" class="modal-form-check hidden" />
-                    <label for="user_polic" class="modal-form-check-desc"> I accept the terms and conditions of the&nbsp;<a class="privacy_polic" href="#"> Privacy Policy </a>
+                    <label for="user_polic" class="modal-form-check-desc"> I accept the terms and conditions of the&nbsp;<a class="privacy_polic" href="" rel="noopener noreferrer nofollow"
+                target="_blank">Privacy Policy</a>
                     </label>
                     <button type="submit" class="modal-form-submit"> Send </button>
                 </form>
@@ -94,56 +105,56 @@
 				</div>						
 				</div>
 			</section>
-			<section class="advan-sec section">
+			<section class="section">
 				<div class="container">
 				<h2 class="section-title-hidden">Our advantages</h2>
 				<ul class="advantages-list list">
-					<li>
-						<div class="adv-icon">
+					<li class="advantages-list-item" >
+						<!-- <div class="adv-icon">
 							<svg class="adv-icon-item">
 								<use href="./image/icons.svg#icon-antenna">									
 								</use>
 							</svg>
-						</div>
+						</div> -->
 						<h3 class="title">Strategy</h3>
-						<p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+						<p class="advantages-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
 					</li>
-					<li>
-						<div class="adv-icon">
+					<li class="advantages-list-item" >
+						<!-- <div class="adv-icon">
 							<svg class="adv-icon-item">
 								<use href="./image/icons.svg#icon-clock">									
 								</use>
 							</svg>
-						</div>
+						</div> -->
 						<h3 class="title">Punctuality</h3>
-						<p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+						<p class="advantages-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
 					</li>
-					<li>
-						<div class="adv-icon">
+					<li class="advantages-list-item">
+						<!-- <div class="adv-icon">
 							<svg class="adv-icon-item">
 								<use href="./image/icons.svg#icon-diagram">									
 								</use>
 							</svg>
-						</div>
+						</div> -->
 						<h3 class="title">Diligence</h3>
-						<p>
-							Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+						<p class="advantages-text">
+						Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
 						</p>
 					</li>
-					<li>
-						<div class="adv-icon">
+					<li class="advantages-list-item" >
+						<!-- <div class="adv-icon">
 							<svg class="adv-icon-item">
 								<use href="./image/icons.svg#icon-astronaut">									
 								</use>
 							</svg>
-						</div>
+						</div> -->
 						<h3 class="title">Technologies</h3>
-						<p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+						<p class="advantages-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
 					</li>
 				</ul>
 				</div>
 			</section>
-			<section class="section sec-doing">
+			<!-- <section class="section sec-doing">
 				<div class="container">
 				<h2 class="section-title">What are we doing</h2>
 				<ul class="doing list">
@@ -152,14 +163,14 @@
 					<li class="doing-item"><img src="./image/handmob.jpg" alt="phone in hand" width="360" /></li>
 				</ul>
 				</div>
-			</section>
-			<section class="section-secondary">
+			</section> -->
+			<section class="section-secondary section">
 				<div class="container">
 				<h2 class="section-title">Our Team</h2>
 				<ul class="team-list list">
 					<li class="team-item">
 						<img src="./image/mark.jpg" alt="Mark Guerrero" width="264" height="260" />
-						<div class="person-card-title"><h3 class="title">Mark Guerrero</h3>
+						<div class="person-card-title"><h3 class="our-team-title">Mark Guerrero</h3>
 						<p class="person-description">Product Designer</p>
 							<ul class="icon-list list">
 								<li class="team-icon-item">
@@ -195,7 +206,7 @@
 					</li>
 					<li class="team-item">
 						<img src="./image/tom.jpg" alt="Tom Ford" width="264" height="260" />
-						<div class="person-card-title"><h3 class="title">Tom Ford</h3>
+						<div class="person-card-title"><h3 class="our-team-title">Tom Ford</h3>
 						<p class="person-description">Frontend Developer</p>
 						<ul class="icon-list list">
 								<li class="team-icon-item">
@@ -231,7 +242,7 @@
 					</li>
 					<li class="team-item">
 						<img src="./image/Camila.jpg" alt="Camila Garcia" width="264" height="260" />
-						<div class="person-card-title"><h3 class="title">Camila Garcia</h3>
+						<div class="person-card-title"><h3 class="our-team-title">Camila Garcia</h3>
 						<p class="person-description">Marketing</p>
 						<ul class="icon-list list">
 								<li class="team-icon-item">
@@ -267,7 +278,7 @@
 					</li>
 					<li class="team-item">
 						<img src="./image/Daniel.jpg" alt="Daniel Wilson" width="264" height="260" />
-						<div class="person-card-title"><h3 class="title">Daniel Wilson</h3>
+						<div class="person-card-title"><h3 class="our-team-title">Daniel Wilson</h3>
 						<p class="person-description">UI Designer</p>
 						<ul class="icon-list list">
 								<li class="team-icon-item">
@@ -304,46 +315,46 @@
 				</ul>
 				</div>
 			</section>
-			<section class="section-customers">
+			<section class="section">
 				<div class="container">
 				<h2 class="section-title">Customers</h2>
-				<ul class="customers-icon-list list">
-					<li>
+				<ul class="customers-list list">
+					<li class="customers-list-item">
 						<a class="customers-link" href="#">
 							<svg class="customers-icon" width="104" height="56">
 								<use href="./image/icons.svg#icon-logoclient-one"></use>	
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="customers-list-item">
 						<a class="customers-link" href="#">
 							<svg class="customers-icon" width="104" height="56">
 								<use href="./image/icons.svg#icon-logoclient-two"></use>	
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="customers-list-item">
 						<a class="customers-link" href="#">
 							<svg class="customers-icon" width="104" height="56">
 								<use href="./image/icons.svg#icon-logoclient-three"></use>	
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="customers-list-item">
 						<a class="customers-link" href="#">
 							<svg class="customers-icon" width="104" height="56">
 								<use href="./image/icons.svg#icon-logoclient-four"></use>	
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="customers-list-item">
 						<a class="customers-link" href="#">
 							<svg class="customers-icon" width="104" height="56">
 								<use href="./image/icons.svg#icon-logoclient-five"></use>	
 							</svg>
 						</a>
 					</li>
-					<li>
+					<li class="customers-list-item">
 						<a class="customers-link" href="#">
 							<svg class="customers-icon" width="104" height="56">
 								<use href="./image/icons.svg#icon-logoclient-six"></use>	
@@ -354,9 +365,9 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer section">
 			<div class="container">
-				<div>
+				<div class="footer-logo-info">
 			<a class="logo" href="./index.html">
 				<span class="logo-blue">web</span>
 				studio
@@ -410,11 +421,69 @@
 				</form>
 			</div>
 		</footer>
-		 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
+
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+	<div class="mobile-menu-container">
+    	<button class="modal-close menu-toggle js-close-menu">
+		<svg class="icon-modal-close" width="8" height="8">
+			<use href="./image/icons.svg#icon-modal"></use>
+		</svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li class="mobile-item"><a href="./index.html" class="mobile-menu-link link-current">Studio</a></li>
+		<li class="mobile-item"><a href="./portfolio.html" class="mobile-menu-link">Portfolio</a></li>
+		<li class="mobile-item"><a href="" class="mobile-menu-link">Contacts</a></li>
+    </ul>
+		<div class="mobile-social">
+			<ul class="mobile-menu">
+				<li class="mobile-item"><a href="tel:+110001111111" class="mobile-menu-link" >+11 (000) 111-11-11</a></li=i>
+				<li class="mobile-item-mail"><a href="mailto:info@devstudio.com" class="link" >info@devstudio.com</a></li=i>
+			</ul>
+		<ul class="icon-list list">
+								<li class="team-icon-item">
+									<a class="team-icon" href="https://www.instagram.com/">
+										<svg class="svg-item" width="16" height="16">
+											<use href="./image/icons.svg#icon-instagram"></use>	
+										</svg>
+									</a>
+								</li>
+								<li class="team-icon-item">
+									<a class="team-icon" href="https://www.twitter.com/">
+										<svg class="svg-item" width="16" height="16">
+											<use href="./image/icons.svg#icon-twitter"></use>	
+										</svg>
+									</a>
+								</li>
+								<li class="team-icon-item">
+									<a class="team-icon" href="https://www.facebook.com/">
+										<svg class="svg-item" width="16" height="16">
+											<use href="./image/icons.svg#icon-facebook"></use>	
+										</svg>
+									</a>
+								</li>
+								<li class="team-icon-item">
+									<a class="team-icon" href="https://www.linkedin.com/">
+										<svg class="svg-item" width="16" height="16">
+											<use href="./image/icons.svg#icon-linkedin"></use>	
+										</svg>
+									</a>
+								</li>								
+		</ul>
+		</div>			
+		</div>
+		</div>
+	
+	
+	<script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
-		<script src="./modal.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 	</body>
 </html>
