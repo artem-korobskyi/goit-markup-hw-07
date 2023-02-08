@@ -14,23 +14,33 @@
 	</head>
 	<body>
 		<!-- Шапка страницы -->
-		<header class="page-header">
-			<div class="container main-nav">
-				<a class="logo" href="./index.html">
-					<span class="logo-blue">web</span>studio
-				</a>
-				<!-- Навигация на другие страницы -->
+			<header class="page-header">
+			<div class="container header-container">				
 				<nav class="navigation">
-				<ul class="site-nav list">
-					<li class="item"><a href="./index.html" class="link">Studio</a></li>
-					<li class="item"><a href="./portfolio.html" class="item-index link-current">Portfolio</a></li>
-					<li class="item"><a href="" class="link">Contacts</a></li>
-				</ul>
-			</nav>
-			<!-- Контакты -->
-			<ul class="auth-nav list">
-				<li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li=i>
-				<li class="item"><a href="tel:+110001111111">+11 (000) 111-11-11</a></li=i>
+					<a class="logo" href="./index.html">
+						<span class="logo-blue">web</span>studio
+					</a>
+							<ul class="site-nav list">
+						<li class="item"><a href="./index.html" class="link">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="item-index link link-current">Portfolio</a></li>
+						<li class="item"><a href="" class="link">Contacts</a></li>
+							</ul>
+				</nav>
+				<button type="button" 
+				class="menu-toggle js-open-menu" 
+				aria-expanded="false"
+        		aria-controls="mobile-menu">
+				<svg class="menu-hamburger" width="32" height="22">
+            <use href="./image/icons.svg#menu-hamburger"></use></svg>
+        </button>
+		<ul class="menu">
+						<li class="item"><a href="./index.html" class="link">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="item-index link active">Portfolio</a></li>
+						<li class="item"><a href="" class="link">Contacts</a></li>
+        </ul>
+			<ul class="menu menu-contacts">
+				<li class="contacts-list"><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a></li=i>
+				<li class="contacts-list"><a href="tel:+110001111111" class="contacts-item">+11 (000) 111-11-11</a></li=i>
 			</ul>
 			</div>
 		</header>
@@ -178,10 +188,11 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
-			<div class="container">
-				<div>
-			<a class="logo" href="./index.html">
+		<footer class="footer section">
+			<div class="container footer-container">
+				<div class="footer-center-tablet">
+				<div class="footer-logo-info mrg-no">
+			<a class="logo no-padding" href="./index.html">
 				<span class="logo-blue">web</span>
 				studio
 			</a>
@@ -189,7 +200,7 @@
 				Increase the flow of customers and sales for your business with digital marketing & growth solutions.
 			</p>
 			</div>
-			<div class="footer-social">
+			<div class="footer-social mrg-no">
 				<p class="footer-social-title">Social media</p>
 				<ul class="footer-social-list list">
 					<li class="footer-icon-item">
@@ -221,6 +232,7 @@
 									</a>
 								</li>	
 				</ul>
+			</div>
 			</div>
 			<div class="subscribe-container">
 				<p class="footer-social-title">Subscribe</p>
